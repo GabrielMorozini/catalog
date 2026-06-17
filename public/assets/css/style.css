@@ -1,0 +1,39 @@
+:root {
+--bg-header: yellow;
+--bg-home:#fff;
+--bg-section:#1d1d1d;
+}
+
+.cabecalho {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    background: var(--bg-header);   
+}
+
+.cabecalho img {
+    width: 120px;
+    margin: 5px 15px 5px 15px;
+}
+
+.cabecalho .src {
+    height: 23px;
+    width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.cabecalho .menu {
+    display: flex;
+    width: 100%;
+}
+
+.cabecalho .menu ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
