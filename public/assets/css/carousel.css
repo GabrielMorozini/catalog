@@ -1,0 +1,13 @@
+.carrossel {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrossel .card {
+    width: 30%;
+}
+
+.carrossel img {
+    width: 100%;
+}

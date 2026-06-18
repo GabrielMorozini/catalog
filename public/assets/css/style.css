@@ -1,7 +1,7 @@
 :root {
---bg-header: yellow;
---bg-home:#fff;
---bg-section:#1d1d1d;
+    --bg-header: yellow;
+    --bg-home: #fff;
+    --bg-section: #1d1d1d;
 }
 
 .cabecalho {
@@ -9,8 +9,9 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    gap: 10%;
-    background: var(--bg-header);   
+    gap: 7%;
+    background: var(--bg-header);
+    border-bottom: 2px solid #000;
 }
 
 .cabecalho img {
@@ -19,12 +20,27 @@
 }
 
 .cabecalho .src {
-    height: 23px;
-    width: 70%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cabecalho .src input {
+    width: 100%;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 15px 0px 0px 15px;
     border: 1px solid #000;
     outline: none;
+}
+
+.cabecalho .src button {
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid #000;
+    
+}
+
+.cabecalho .src button img {
+    width: 25px;
 }
 
 .cabecalho .menu {
@@ -34,6 +50,90 @@
 
 .cabecalho .menu ul {
     display: flex;
+    justify-content: end;
     gap: 50px;
     list-style: none;
+}
+
+.cabecalho .menu ul li a {
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.cabecalho .menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff0000;
+    border-radius: 20px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.cabecalho .menu ul li a:hover {
+    opacity: 0.8;
+}
+
+.cabecalho .menu ul li a:hover::after{
+    transform: scaleX(1);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.home .title-show {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.home .sessao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5%;
+    margin: 10px;
+}
+
+.home .sessao .artigo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #eeeeee;
+    border: 1px solid #949494;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.home .sessao a {
+    width: 380px;
+}
+
+.home .sessao .artigo img {
+    width: 100%;
+}
+
+.home .sessao .artigo small {
+    transition: all 0.3s ease;
+}
+
+.home .sessao .artigo:hover {
+    transform: scale(1.05);
+}
+
+.home .catalog {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }

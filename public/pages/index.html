@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lego | Catálogo de peça</title>
+    <title>Lego | Catálogo de conjuntos lego</title>
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/carousel.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../assets/img/icon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -14,13 +18,13 @@
         <a href="#" class="logo">
             <img src="../assets/img/logo.png" alt="">
         </a>
-        
+
         <div class="src">
-        <input type="text">
-        <button><img src="../assets/img/lupa.png" alt=""></button>
+            <input type="text" placeholder="Pesquisar...">
+            <button><img src="../assets/img/lupa.png" alt="buscar"></button>
         </div>
-    
-      <nav class="menu">
+
+        <nav class="menu">
             <ul>
                 <li><a href="#">City</a></li>
                 <li><a href="#">Architecture</a></li>
@@ -30,8 +34,40 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="home">
+        <h1 class="title-show">Principais sets</h1>
 
+        <section class="sessao">
+            <a href="#">
+                <article class="artigo">
+                    <img src="../assets/img/produtos/torre de sauron.png" alt="Torre de Sauron - R$"><br>
+                    <small>Set Torre de Sauron</small>
+                    <small>R$2.341,72</small>
+                </article>
+            </a>
+            <a href="#">
+                <article class="artigo">
+                    <img src="../assets/img/produtos/statue of liberty.png" alt="Estátua da liberdade - R$"><br>
+                    <small>Set Estatua da Liberdade</small>
+                    <small>R$1.199,00</small>
+                </article>
+            </a>
+            <a href="#">
+                <article class="artigo">
+                    <img src="../assets/img/produtos/police city.png" alt="Police premium set - R$"><br>
+                    <small>Set Lego City Police Station 60141</small>
+                    <small>R$459,99</small>
+                </article>
+            </a>
+        </section>
+        <div class="catalog">
+            <h3>Lego City</h3>
+            <section class="carrossel">
+                <article class="card">
+                    <img src="../assets/img/produtos/police city.png" alt="">
+                </article>
+            </section>
+        </div>
     </main>
     <footer>
 
