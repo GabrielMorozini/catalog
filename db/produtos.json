@@ -1,0 +1,122 @@
+[
+    {
+        "id": "city",
+        "titulo": "Lego City",
+        "produtos": [
+            {
+                "nome": "Fire Station Set",
+                "codigo": "60320",
+                "preco": 399.99,
+                "imagem": "../assets/img/produtos/firefighter.png"
+            },
+            {
+                "nome": "Great Vehicle",
+                "codigo": "60500",
+                "preco": 249.99,
+                "imagem": "../assets/img/produtos/lego-city-great-vehicles-60500.png"
+            },
+            {
+                "nome": "Police Station",
+                "codigo": "60141",
+                "preco": 459.99,
+                "imagem": "../assets/img/produtos/police-city.png"
+            }
+        ]
+    },
+    {
+        "id": "architecture",
+        "titulo": "Architecture",
+        "produtos": [
+            {
+                "nome": "Estátua da Liberdade",
+                "codigo": "21042",
+                "preco": 1199.00,
+                "imagem": "../assets/img/produtos/statue-of-liberty.png"
+            },
+            {
+                "nome": "Torre Eiffel",
+                "codigo": "21044",
+                "preco": 399.99,
+                "imagem": "../assets/img/produtos/paris-set.png"
+            },
+            {
+                "nome": "San Francisco",
+                "codigo": "21043",
+                "preco": 449.99,
+                "imagem": "../assets/img/produtos/san-francisco.png"
+            }
+        ]
+    },
+    {
+        "id": "icons",
+        "titulo": "Icons",
+        "produtos": [
+            {
+                "nome": "Blacktron Renegade",
+                "codigo": "10355",
+                "preco": 599.99,
+                "imagem": "../assets/img/produtos/blacktron-renegade.png"
+            },
+            {
+                "nome": "torre de sauron set",
+                "codigo": "10333",
+                "preco": 2341.72,
+                "imagem": "../assets/img/produtos/torre-de-sauron.png"
+            },
+            {
+                "nome": "star trek",
+                "codigo": "10356",
+                "preco": 499.99,
+                "imagem": "../assets/img/produtos/star-trek.png"
+            }
+        ]
+    },
+    {
+        "id": "friends",
+        "titulo": "Friends",
+        "produtos": [
+            {
+                "nome": "unicorn dream cafe",
+                "codigo": "42684",
+                "preco": 249.99,
+                "imagem": "../assets/img/produtos/unicorn-dream.png"
+            },
+            {
+                "nome": "paisley",
+                "codigo": "42647",
+                "preco": 99.99,
+                "imagem": "../assets/img/produtos/paisley-set.png"
+            },
+            {
+                "nome": "Heartlake city fashion show",
+                "codigo": "42685",
+                "preco": 299.99,
+                "imagem": "../assets/img/produtos/fashion-show.png"
+            }
+        ]
+    },
+    {
+        "id": "minecraft",
+        "titulo": "Minecraft",
+        "produtos": [
+            {
+                "nome": "O Encontro do Guardiao",
+                "codigo": "21274",
+                "preco": 149.99,
+                "imagem": "../assets/img/produtos/guardiao.png"
+            },
+            {
+                "nome": "Emboscada no Portal do Nether",
+                "codigo": "21255",
+                "preco": 279.99,
+                "imagem": "../assets/img/produtos/nether.png"
+            },
+            {
+                "nome": "A Masmorra dos Esqueletos",
+                "codigo": "21189",
+                "preco": 249.99,
+                "imagem": "../assets/img/produtos/esqueleto.png"
+            }
+        ]
+    }
+]

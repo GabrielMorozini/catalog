@@ -1,0 +1,107 @@
+:root {
+    --catalog-city: #026eb7;
+    --catalog-architecture: yellowgreen;
+    --catalog-icons:#d92e1f;
+    --catalog-friends:#f88cb5;
+    --catalog-minecraft: #76d0e2;
+
+}
+
+.home .catalogo .show.city {
+    display: flex;
+    position: relative;
+    background:var(--catalog-city);
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.home .catalogo .show.city::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(153, 205, 50, 0), var(--catalog-city));
+    pointer-events: none;
+}
+
+
+.home .catalogo .show.architecture {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--catalog-architecture);
+    justify-content: space-between;
+}
+
+.home .catalogo .show.architecture::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30.2%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(153, 205, 50, 0), var(--catalog-architecture));
+    pointer-events: none;
+}
+
+
+.home .catalogo .show.icons {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--catalog-icons) ;
+    justify-content: space-between;
+}
+.home .catalogo .show.icons::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(153, 205, 50, 0), var(--catalog-icons));
+    pointer-events: none;
+}
+
+.home .catalogo .show.friends {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--catalog-friends);
+    justify-content: space-between;
+}
+.home .catalogo .show.friends::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30.3%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(153, 205, 50, 0), var(--catalog-friends));
+    pointer-events: none;
+}
+
+.home .catalogo .show.minecraft {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--catalog-minecraft);
+    justify-content: space-between;
+}
+.home .catalogo .show.minecraft::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(153, 205, 50, 0),var(--catalog-minecraft));
+    pointer-events: none;
+}

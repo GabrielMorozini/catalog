@@ -7,9 +7,11 @@
     <title>Lego | Catálogo de conjuntos lego</title>
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/carousel.css">
+    <link rel="stylesheet" href="../assets/css/catalog.css">
+    <link rel="stylesheet" href="../assets/css/list.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="../assets/js/script.js" defer></script>
     <link rel="shortcut icon" href="../assets/img/icon.png" type="image/x-icon">
 </head>
 
@@ -37,7 +39,7 @@
     <main class="home">
         <h1 class="title-show">Principais sets</h1>
 
-        <section class="sessao">
+        <section class="sessao" id="content-destaques">
             <a href="#">
                 <article class="artigo">
                     <img src="../assets/img/produtos/torre de sauron.png" alt="Torre de Sauron - R$"><br>
@@ -60,35 +62,86 @@
                 </article>
             </a>
         </section>
+
         <div class="catalogo">
-            <span class="show">
+            <span class="show city">
                 <img src="../assets/img/show/lego city.png" alt="">
-            <h3>Lego City</h3>
-            <img src="../assets/img/produtos/firefighter.png" alt="" class="option1">
+                <div class="sets">
+                    <h3 class="light">Lego City</h3>
+                    <div>
+                        <button type="button" class="btn btn-dark">Ver mais</button>
+                    </div>
+                     <ul class="lista-produtos">
+                        <li>produto lego1</li>
+                        <li>produto lego2</li>
+                        <li>produto lego3</li>
+                    </ul>
+                </div>
+            </span>
+        </div>
+
+        <div class="catalogo">
+            <span class="show architecture">
+                <img src="../assets/img/show/architecture.webp" alt="">
+                <div class="sets">
+                    <h3>Architecture</h3>
+                    <div>
+                        <button type="button" class="btn btn-dark">Ver mais</button>
+                    </div>
+                     <ul class="lista-produtos">
+                        <li>produto lego1</li>
+                        <li>produto lego2</li>
+                        <li>produto lego3</li>
+                    </ul>
+                </div>
             </span>
         </div>
         <div class="catalogo">
-            <span class="show">
-                <img src="../assets/img/show/lego city.png" alt="">
-                <h3>Lego City</h3>
-            </span>
-        </div class="catalogo">
-        <div class="catalogo">
-            <span class="show">
-                <img src="../assets/img/show/lego city.png" alt="">
-                <h3>Lego City</h3>
-            </span>
-        </div>
-        <div class="catalogo">
-            <span class="show">
-                <img src="../assets/img/show/lego city.png" alt="">
-                <h3>Lego City</h3>
+            <span class="show icons">
+                <img src="../assets/img/show/icons.webp" alt="">
+                <div class="sets">
+                    <h3 class="light">Icons</h3>
+                    <div>
+                        <button type="button" class="btn btn-dark">Ver mais</button>
+                    </div>
+                     <ul class="lista-produtos">
+                        <li>produto lego1</li>
+                        <li>produto lego2</li>
+                        <li>produto lego3</li>
+                    </ul>
+                </div>
             </span>
         </div>
         <div class="catalogo">
-            <span class="show">
-                <img src="../assets/img/show/lego city.png" alt="">
-              <h3>Lego City</h3>
+            <span class="show friends">
+                <img src="../assets/img/show/friends.webp" alt="">
+                <div class="sets">
+                    <h3>Friends</h3>
+                    <div>
+                        <button type="button" class="btn btn-dark">Ver mais</button>
+                    </div>
+                    <ul class="lista-produtos">
+                        <li>produto lego1</li>
+                        <li>produto lego2</li>
+                        <li>produto lego3</li>
+                    </ul>
+                </div>
+            </span>
+        </div>
+        <div class="catalogo">
+            <span class="show minecraft">
+                <img src="../assets/img/show/minecraft.webp" alt="">
+                <div class="sets">
+                    <h3>Minecraft</h3>
+                    <div>
+                        <button type="button" class="btn btn-dark">Ver mais</button>
+                    </div>
+                     <ul class="lista-produtos">
+                        <li>produto lego1</li>
+                        <li>produto lego2</li>
+                        <li>produto lego3</li>
+                    </ul>
+                </div>
             </span>
         </div>
     </main>
