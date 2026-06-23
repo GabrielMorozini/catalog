@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none !important;
+    font-size: 19px;
+}
+
+
+/* =============================================
+   RESPONSIVIDADE — Lego Catálogo
+   ============================================= */
+ 
+/* ---------- TABLET (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+ 
+  .cabecalho {
+    gap: 2%;
+  }
+ 
+  .cabecalho .menu ul {
+    gap: 24px;
+  }
+ 
+  .home .catalogo .show img {
+    width: 35%;
+  }
+ 
+  .catalogo .lista-produtos {
+    flex-wrap: wrap;
+  }
+}
+ 
+ 
+/* ---------- MOBILE GRANDE (≤ 768px) ---------- */
+@media (max-width: 768px) {
+ 
+  /* ── CONTAINER ── */
+  .home {
+    padding: 0 12px;
+  }
+ 
+  /* ── HEADER ── */
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 16px;
+  }
+ 
+  .cabecalho img {
+    width: 90px;
+    margin: 0;
+  }
+ 
+  .cabecalho .menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-right: 0;
+  }
+ 
+  .cabecalho .menu ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+  }
+ 
+  .cabecalho .menu ul li a {
+    font-size: 0.85rem;
+  }
+ 
+  /* ── TÍTULO ── */
+  .home .title-show {
+    font-size: 1.5rem;
+  }
+ 
+  /* ── DESTAQUES ── */
+  .home .sessao {
+    gap: 16px;
+    margin: 10px 0;
+  }
+ 
+  .home .sessao a {
+    flex: 1 1 100%;
+    max-width: 360px;
+  }
+ 
+  /* ── BANNERS DE CATEGORIA ── */
+  .home .catalogo {
+    border-radius: 8px;
+  }
+ 
+  .home .catalogo .show img {
+    width: 50%;
+    object-fit: cover;
+  }
+ 
+  .home .catalogo .show .sets {
+    margin-right: 3%;
+  }
+ 
+  .home .catalogo .show .sets h3,
+  .home .catalogo .show .sets .light {
+    font-size: 1.2rem;
+  }
+ 
+  .home .catalogo .show button {
+    width: auto;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+ 
+  /* ── LISTA DE PRODUTOS ── */
+  .catalogo .lista-produtos {
+    gap: 0.75rem;
+  }
+ 
+  .catalogo .lista-produtos.ativo {
+    max-height: 600px;
+    padding: 1rem;
+  }
+ 
+  .catalogo .lista-produtos li {
+    flex: 1 1 calc(50% - 0.75rem);
+    max-width: calc(50% - 0.75rem);
+  }
+ 
+  .catalogo .lista-produtos li img {
+    height: 90px;
+  }
+}
+ 
+ 
+/* ---------- MOBILE PEQUENO (≤ 500px) ---------- */
+@media (max-width: 500px) {
+ 
+  .home {
+    padding: 0 10px;
+  }
+ 
+  /* ── HEADER: logo + menu lado a lado ── */
+  .cabecalho {
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+ 
+  .cabecalho img {
+    width: 60px;
+    margin: 0;
+  }
+ 
+  .cabecalho .menu {
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+  }
+ 
+  .cabecalho .menu ul {
+    width: 100%;
+    justify-content: center;
+    gap: 6px 12px;
+  }
+ 
+  .cabecalho .menu ul li a {
+    font-size: 0.72rem;
+  }
+ 
+  /* ── TÍTULO ── */
+  .home .title-show {
+    font-size: 1.2rem;
+    margin: 14px 0;
+  }
+ 
+  /* ── DESTAQUES: card ocupa quase toda largura ── */
+  .home .sessao {
+    margin: 8px 0;
+    gap: 12px;
+  }
+ 
+  .home .sessao a {
+    max-width: 100%;
+  }
+ 
+  .home .sessao .artigo {
+    padding: 14px;
+  }
+ 
+  /* ── BANNERS ── */
+  .home .catalogo .show img {
+    width: 50%;
+  }
+ 
+  .home .catalogo .show .sets h3,
+  .home .catalogo .show .sets .light {
+    font-size: 0.95rem;
+  }
+ 
+  .home .catalogo .show button {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    width: auto;
+  }
+ 
+  /* ── LISTA DE PRODUTOS: 1 coluna ── */
+  .catalogo .lista-produtos li {
+    flex: unset;
+    width: 85%;
+    max-width: 280px;
+  }
+ 
+  .catalogo .lista-produtos.ativo {
+    max-height: 1000px;
+  }
+ 
+  .catalogo .lista-produtos li img {
+    height: 110px;
+  }
+ 
+  .catalogo .lista-produtos .set-name {
+    font-size: 12px;
+  }
+ 
+  .catalogo .lista-produtos .set-price {
+    font-size: 13px;
+  }
+}
